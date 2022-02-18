@@ -1,4 +1,4 @@
-*<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
     <h1>Fill Out Below</h1>
     <h6>Please fill the form out and hit submit when done.</h6>
   
-    <form method="post" action="./resources/php/Survey-Form-Handler.php">
+    <form method="POST" data-netlify="true">
       <!-- we add this div. If we remove it everything will go to the left of the page -->
       
         <h2>Employee Interests Survey form</h2>
@@ -49,6 +49,10 @@
         <label for="Comments">Tell Us A Little About Yourself:</label><br>
         <textarea id="Comments" name="Comments" cols=30 rows=4></textarea> <br></br>
 
+        <label for="Comments">Upload Your Resume/CV Here:</label><br>
+        <br>
+        <input type="file" id="myfile" name="myfile"></textarea> <br></br>
+      
         <label for="Exercise">Do you exercise at home?</label><br>
         <input type="radio" name="exe" value="Yes">Yes</input>
         <input type="radio" name="exe" value="No">No</input><br></br>
@@ -71,6 +75,10 @@
         <br></br>
 
         <input type="submit" value="Submit Form">
+
+        <br>
+        <br>
+
     </form> 
 
             <!-- JavaScript Bundle with Popper -->

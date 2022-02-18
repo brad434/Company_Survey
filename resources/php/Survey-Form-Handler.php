@@ -24,13 +24,10 @@
 
     $headers = "From: $email_from \r\n";
 
-    $headers .= "Reply-To: $Name \r\n";
+    //$headers = "Reply-To: $Name \r\n";
 
     mail($to,$email_subject,$email_body,$headers);
 
     header("Location: index.html");
-
-
-
 
 ?>
