@@ -23,6 +23,8 @@ form {
     text-align: center;
 }
 
-form .recap {
-    text-align: center;
+#capatcha {
+    margin: 0 auto;
+    display:block;
+    /* text-align: center; */
 }
